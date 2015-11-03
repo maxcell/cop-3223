@@ -6,7 +6,7 @@
     - [Example 2](#example-2)
 - [Arithmetic Computations](#arithmetic-computations)
     - [Example 3 (Sum)](#example-3-sum)
-    - [Example 4 (Powers of 2)][#example-4-powers-of-2]
+    - [Example 4 (Powers of 2)](#example-4-powers-of-2)
 
 ### How did we do things before loops?
 Loops are *crazy* and that's okay! But let's take a loop at how life once was before these glorious structures.
