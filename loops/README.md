@@ -4,8 +4,8 @@
     - [Example 1](#example-1)
 - [Printing with loops](#printing-with-loops)
     - [Example 2](#example-2)
-- [Arithmetic computations with loops(sum)](#-arithmetic-computations-with-loopssum)
-    - [Example 3](#example-3)
+- [Arithmetic Computations](#arithmetic-computations)
+    - [Example 3 (Sum)](#example-3-sum)
 
 ### How did we do things before loops?
 Loops are *crazy* and that's okay! But let's take a loop at how life once was before these glorious structures.
@@ -52,10 +52,10 @@ int main(void){
 }
 ```
 
-### Arithmetic computations with loops(sum)]
+### Arithmetic Computations
 But sure, we can print out numbers as much as we want but we want to do some cool things with them. Let's take this for instance:
 
-#### Example 3
+#### Example 3 (Sum)
 ```c
 // Objective: Take the sum from 0 to an end based on user's input
 // ASSUME THAT INPUT IS NONNEGATIVE
