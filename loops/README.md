@@ -1,10 +1,14 @@
 # Loops
 ### Table of Contents
-- [How did we do things before loops?](#example-1)
-- [Printing with loops](#example-2)
-- [Arithmetic computations with loops(sum)](#example-3)
+- [How did we do things before loops?](###)
+    - [Example 1](#example-1)
+- [Printing with loops](###)
+    - [Example 2](#example-2)
+- [Arithmetic computations with loops(sum)](###)
+    - [Example 3](#example-3)
 
-Loops are *crazy*
+### How did we do things before loops?
+Loops are *crazy* and that's okay! But let's take a loop at how life once was before these glorious structures.
 
 Imagine if I wanted to print out the numbers ```0 - 9```. I could write a solution as:
 
@@ -27,6 +31,7 @@ int main(void){
 }
 ```
 
+### Printing with loops
 So, sure this is nice to do when you have it on a small scale, but what if I wanted to have the values `0 - 1,000,000`. Doing that by hand would be rather difficult. So loops actually allow us to intuitively solve this problem with less work:
 
 #### Example 2
@@ -47,6 +52,7 @@ int main(void){
 }
 ```
 
+### Arithmetic computations with loops(sum)]
 But sure, we can print out numbers as much as we want but we want to do some cool things with them. Let's take this for instance:
 
 #### Example 3
