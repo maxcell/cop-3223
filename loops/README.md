@@ -1,4 +1,6 @@
 # Loops
+### Table of Contents
+- [Example 1](#example-2)
 
 Loops are *crazy*
 
