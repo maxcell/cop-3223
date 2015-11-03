@@ -89,7 +89,18 @@ So what sum do you want to compute to?
 6
 The sum from 0 to 6 is: 21
 ```
+So most of the work happens within the loop, so breaking down what is happening:
+```
+1. Pre-Condition: We are telling i to start at 0 (i = 0)
+2. Condition: We check if i is less than or equal to end (i <= end)
+3. We go into the loop
+    a. Take sum and add our current 'i' (sum + i)
+    b. Assign the result to sum         (sum = sum + i)
+    c. The shorthand is                 sum += i
+4. Post-Condition: Increment our value of 'i'
+5. Repeat until 'Condition' is met
 
+```
 #### Example 4 (Powers of 2)
 Here we want to try to learn some cool things to do with another other loop, the `while` loop:
 ```c
@@ -126,4 +137,21 @@ int main(void){
 
     return 0;
 }
+```
+
+Let's take a look at our output on `0, 1, and 8`:
+```
+So what do you want to raise 2 to?
+0
+When 2 is raised to 0, the result is: 1
+```
+```
+So what do you want to raise 2 to?
+1
+When 2 is raised to 1, the result is: 2
+```
+```
+So what do you want to raise 2 to?
+8
+When 2 is raised to 8, the result is: 256
 ```
