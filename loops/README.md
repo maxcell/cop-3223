@@ -1,6 +1,8 @@
 # Loops
 ### Table of Contents
-- [Example 1](#example-2)
+- [How did we do things before loops?](#example-1)
+- [Printing with loops](#example-2)
+- [Arithmetic computations with loops(sum)](#example-3)
 
 Loops are *crazy*
 
