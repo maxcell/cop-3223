@@ -6,6 +6,7 @@
     - [Example 2](#example-2)
 - [Arithmetic Computations](#arithmetic-computations)
     - [Example 3 (Sum)](#example-3-sum)
+    - [Example 4 (Powers of 2)][#example-4-powers-of-2]
 
 ### How did we do things before loops?
 Loops are *crazy* and that's okay! But let's take a loop at how life once was before these glorious structures.
@@ -87,4 +88,42 @@ If we run this and I want to compute the sum from `0 to 6`, we see:
 So what sum do you want to compute to?
 6
 The sum from 0 to 6 is: 21
+```
+
+#### Example 4 (Powers of 2)
+Here we want to try to learn some cool things to do with another other loop, the `while` loop:
+```c
+// Objective: Ask the user for a __nonnegative__ exponent to raise 2 to.
+// Then, output the result
+#include <stdio.h>
+int main(void){
+
+    int base = 2;   // The base
+    int exponent;   // What we raise our base to
+    int temp;       // Something we will use to keep track of our run in the while loop
+
+    int result = 1;
+
+    // Prompt the user to give us an exponent
+    printf("So what do you want to raise 2 to?\n");
+    scanf("%d", &exponent);
+    temp = exponent;
+
+    // We keep running until our temp (exponent) hits 0. Once it does, we will have
+    // our computed power
+    while( temp > 0 ){
+        if(temp == 0){
+            result *= 1;
+        }
+        else {
+        result *= base;
+        temp--;
+        }
+    }
+
+    // We have arrived at the final result, let's print it out!
+    printf("When %d is raised to %d, the result is: %d\n", base, exponent, result);
+
+    return 0;
+}
 ```
