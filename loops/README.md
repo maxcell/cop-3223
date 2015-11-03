@@ -1,6 +1,6 @@
 # Loops
 ### Table of Contents
-- [Example 1](https://github.com/maxcell/cop-3223/blob/master/loops/README.md#example-2)
+- [Example 1](#example-2)
 
 Loops are *crazy*
 
