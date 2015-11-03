@@ -9,7 +9,7 @@
     - [Example 4 (Powers of 2)](#example-4-powers-of-2)
 
 ### How did we do things before loops?
-Loops are *crazy* and that's okay! But let's take a loop at how life once was before these glorious structures.
+Loops are *crazy* and that's okay! But let's take a look at how life once was before these glorious structures.
 
 Imagine if I wanted to print out the numbers ```0 - 9```. I could write a solution as:
 
