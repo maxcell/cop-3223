@@ -1,5 +1,5 @@
 # Loops
-### - Table of Contents
+### Table of Contents
 - [How did we do things before loops?](#example-1)
 - [Printing with loops](#example-2)
 - [Arithmetic computations with loops(sum)](#example-3)
