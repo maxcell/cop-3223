@@ -1,10 +1,10 @@
 # Loops
 ### Table of Contents
-- [How did we do things before loops?](###)
+- [How did we do things before loops?](#how-did-we-do-things-before-loops)
     - [Example 1](#example-1)
-- [Printing with loops](###)
+- [Printing with loops](#printing-with-loops)
     - [Example 2](#example-2)
-- [Arithmetic computations with loops(sum)](###)
+- [Arithmetic computations with loops(sum)](#-arithmetic-computations-with-loopssum)
     - [Example 3](#example-3)
 
 ### How did we do things before loops?
