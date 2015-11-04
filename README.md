@@ -1,7 +1,7 @@
 # COP 3223 - Notes
 So you are probably wondering, "Huh, what would really help me understand this course?" Well, here are a bit of info that might help you out! This will be your second exam and so you learned a few things since then:
 
-1. Loops
+1. [Loops](https://github.com/maxcell/cop-3223/tree/master/loops)
 2. Files
 3. Arrays
 4. Pointers
