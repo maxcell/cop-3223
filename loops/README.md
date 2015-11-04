@@ -56,11 +56,13 @@ do {
 } while(condition == true)
 ```
 It means that we will be guaranteed to go inside and do the operations 1 time even if the
-while condition ends up being `false`. But beyond that, the `do while` loop is practically identical to the while loop. **Do not forget, you at least have to go through the loop 1 time.**
+while condition ends up being `false`. But beyond that, the `do while` loop is practically identical to the while loop. **Do not forget, you at least have to go through the loop at least 1 time.**
 
 #### For Loops
 The `for` loop is written differently than the other two loops but still can provide the same operations as before.
 ```c
+// Understand that this is what the pieces mean
+// and every body understands it differently
 for( pre-condition ; condition ; post-condition ){
     do stuff...
 }
