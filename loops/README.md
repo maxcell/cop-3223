@@ -66,9 +66,9 @@ for( pre-condition ; condition ; post-condition ){
 }
 ```
 Here we use the `for` keyword and the parenthesis have three parts:
-    1.  `pre-condition`: This will be the initial state of our for loop, this is typically where you see the `i = 0` portion. Telling our program that we are going to make our `i` start at `0`.
-    2.  `condition`: This is the condition that needs to be `true` so in the `while` and `do while` loops we saw that the loop would continue to run while `condition == true`. This is exactly the same thing we do for the `for` loop.
-    3.  `post-condition`: This is what happens whenever we have finished each run of the `for` loop. So when we do `i++`, we are telling our program, if we have made it through a successful run through our loop, we increment our `i` and then run to see if the `condition == true`.
+1. `pre-condition`: This will be the initial state of our for loop, this is typically where you see the `i = 0` portion. Telling our program that we are going to make our `i` start at `0`.
+2. `condition`: This is the condition that needs to be `true` so in the `while` and `do while` loops we saw that the loop would continue to run while `condition == true`. This is exactly the same thing we do for the `for` loop.
+3. `post-condition`: This is what happens whenever we have finished each run of the `for` loop. So when we do `i++`, we are telling our program, if we have made it through a successful run through our loop, we increment our `i` and then run to see if the `condition == true`.
 
 ### Printing with loops
 So, sure this is nice to do when you have it on a small scale, but what if I wanted to have the values `0 - 1,000,000`. Doing that by hand would be rather difficult. So loops actually allow us to intuitively solve this problem with less work:
