@@ -2,8 +2,13 @@
 ### Table of Contents
 - [How did we do things before loops?](#how-did-we-do-things-before-loops)
     - [Example 1](#example-1)
+- [Types of Loops](#types-of-loops)
+    - [While Loops](#while-loops)
+    - [Do While Loops](#do-while-loops)
+    - [For Loops](#for-loops)
 - [Printing with loops](#printing-with-loops)
     - [Example 2](#example-2)
+-  [Types of Loops](#types-of-loops)
 - [Arithmetic Computations](#arithmetic-computations)
     - [Example 3 (Sum)](#example-3-sum)
     - [Example 4 (Powers of 2)](#example-4-powers-of-2)
@@ -32,6 +37,39 @@ int main(void){
 }
 ```
 
+### Types of Loops
+As you already know, we have several different type of looping structures that we can use and each does a different thing for us:
+#### While Loops
+The `while` loop only has one piece, the condition.
+```c
+while( condition == true ){
+    do stuff...
+}
+```
+We will continue to operate solely if the condition is true. So if our initial condition is not true, we will never have to enter in the `while` loop.
+
+#### Do-While Loops
+The `do while` loop is different from the `while` loop with the distinction of `do`.
+```c
+do {
+    do stuff...
+} while(condition == true)
+```
+It means that we will be guaranteed to go inside and do the operations 1 time even if the
+while condition ends up being `false`. But beyond that, the `do while` loop is practically identical to the while loop. **Do not forget, you at least have to go through the loop 1 time.**
+
+#### For Loops
+The `for` loop is written differently than the other two loops but still can provide the same operations as before.
+```c
+for( pre-condition ; condition ; post-condition ){
+    do stuff...
+}
+```
+Here we use the `for` keyword and the parenthesis have three parts:
+1. `pre-condition`: This will be the initial state of our for loop, this is typically where you see the `i = 0` portion. Telling our program that we are going to make our `i` start at `0`.
+2. `condition`: This is the condition that needs to be `true` so in the `while` and `do while` loops we saw that the loop would continue to run while `condition == true`. This is exactly the same thing we do for the `for` loop.
+3. `post-condition`: This is what happens whenever we have finished each run of the `for` loop. So when we do `i++`, we are telling our program, if we have made it through a successful run through our loop, we increment our `i` and then run to see if the `condition == true`.
+
 ### Printing with loops
 So, sure this is nice to do when you have it on a small scale, but what if I wanted to have the values `0 - 1,000,000`. Doing that by hand would be rather difficult. So loops actually allow us to intuitively solve this problem with less work:
 
@@ -46,9 +84,10 @@ int main(void){
     printf("The list of numbers: ");
     for(i = 0; i < 1000000; i++){
         printf("%d", i);
-        if(i == 1000000 - 1) printf("\n");      // This just guarantees our last value will printout with a newline
-        else printf(" ");
+        if(i < 1000000 - 1) printf(" ");    // Make it print out a space
+                                            // after every number except the last
     }
+        printf("\n");                       // Last number has a newline instead
     return 0;
 }
 ```
