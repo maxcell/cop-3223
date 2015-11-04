@@ -2,12 +2,12 @@
 ### Table of Contents
 - [How did we do things before loops?](#how-did-we-do-things-before-loops)
     - [Example 1](#example-1)
+- [Printing with loops](#printing-with-loops)
+    - [Example 2](#example-2)
 - [Types of Loops](#types-of-loops)
     - [While Loops](#while-loops)
     - [Do While Loops](#do-while-loops)
     - [For Loops](#for-loops)
-- [Printing with loops](#printing-with-loops)
-    - [Example 2](#example-2)
 -  [Types of Loops](#types-of-loops)
 - [Arithmetic Computations](#arithmetic-computations)
     - [Example 3 (Sum)](#example-3-sum)
@@ -33,6 +33,28 @@ int main(void){
     printf("0 1 2 3 4 5 6 7 8 9\n");
 
 
+    return 0;
+}
+```
+
+### Printing with loops
+So, sure this is nice to do when you have it on a small scale, but what if I wanted to have the values `0 - 1,000,000`. Doing that by hand would be rather difficult. So loops actually allow us to intuitively solve this problem with less work:
+
+#### Example 2
+```c
+// Objective: Print out the values from 0 - 9
+#include <stdio.h>
+
+int main(void){
+
+    int i;      // Don't forget your counter declaration
+    printf("The list of numbers: ");
+    for(i = 0; i < 1000000; i++){
+        printf("%d", i);
+        if(i < 1000000 - 1) printf(" ");    // Make it print out a space
+                                            // after every number except the last
+    }
+        printf("\n");                       // Last number has a newline instead
     return 0;
 }
 ```
@@ -73,27 +95,6 @@ Here we use the `for` keyword and the parenthesis have three parts:
 2. `condition`: This is the condition that needs to be `true` so in the `while` and `do while` loops we saw that the loop would continue to run while `condition == true`. This is exactly the same thing we do for the `for` loop.
 3. `post-condition`: This is what happens whenever we have finished each run of the `for` loop. So when we do `i++`, we are telling our program, if we have made it through a successful run through our loop, we increment our `i` and then run to see if the `condition == true`.
 
-### Printing with loops
-So, sure this is nice to do when you have it on a small scale, but what if I wanted to have the values `0 - 1,000,000`. Doing that by hand would be rather difficult. So loops actually allow us to intuitively solve this problem with less work:
-
-#### Example 2
-```c
-// Objective: Print out the values from 0 - 9
-#include <stdio.h>
-
-int main(void){
-
-    int i;      // Don't forget your counter declaration
-    printf("The list of numbers: ");
-    for(i = 0; i < 1000000; i++){
-        printf("%d", i);
-        if(i < 1000000 - 1) printf(" ");    // Make it print out a space
-                                            // after every number except the last
-    }
-        printf("\n");                       // Last number has a newline instead
-    return 0;
-}
-```
 
 ### Arithmetic Computations
 But sure, we can print out numbers as much as we want but we want to do some cool things with them. Let's take this for instance:
