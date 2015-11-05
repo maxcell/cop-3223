@@ -12,6 +12,7 @@
 - [Arithmetic Computations](#arithmetic-computations)
     - [Example 3 (Sum)](#example-3-sum)
     - [Example 4 (Powers of 2)](#example-4-powers-of-2)
+- [Common Pitfalls](#common-pitfalls)
 
 ### How did we do things before loops?
 Loops are *crazy* and that's okay! But let's take a look at how life once was before these glorious structures.
@@ -197,3 +198,29 @@ So what do you want to raise 2 to?
 8
 When 2 is raised to 8, the result is: 256
 ```
+
+### Common Pitfalls
+So now that you know about Loops, you need to be sure to look out for how they can go wrong:
+- Make sure you are using the right keyword, if you need a `while` loop, be sure to use `while`.
+- Make sure your condition makes sense. You can have two things happen that you might not expect:
+    - You have a condition that will make your program never **go inside** of the loop.
+    - You have a condition that will make your program never **leave outside** of the loop.
+- Make sure to use `;` appropriately
+    - If you write a while loop like this:
+        ```c
+        int i = 0;
+        while(i < 10);
+        {
+            printf("The value of i: %d\n", i);
+            i++;
+        }
+        ```
+        It would compile, however, would run forever because of that `;` right at the end of `while(i < 10)`.
+    - Be sure to have a condition that can end as well
+        ```c
+        int i;
+        for(i = 1; i > 0; i++){
+            printf("Loop ran for %d times.\n", i);
+        }
+        ```
+        If you run this, you notice how run forever and **infinite loop**. Scary.
