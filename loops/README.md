@@ -208,6 +208,7 @@ So now that you know about Loops, you need to be sure to look out for how they c
     - You have a condition that will make your program never **leave outside** of the loop.
 - Make sure to use `;` appropriately
     - If you write a while loop like this:
+    
         ```c
         int i = 0;
         while(i < 10);
@@ -218,6 +219,7 @@ So now that you know about Loops, you need to be sure to look out for how they c
         ```
         It would compile, however, would run forever because of that `;` right at the end of `while(i < 10)`.
     - Be sure to have a condition that can end as well
+
         ```c
         int i;
         for(i = 1; i > 0; i++){
