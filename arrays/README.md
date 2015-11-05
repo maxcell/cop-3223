@@ -85,3 +85,48 @@ int main(void){
 ```
 
 ### Cool Stuff with Arrays
+Well, we kind of understand what we have here now. But let's keep playing around with it.
+
+#### Example 4
+```c
+// Objective: take the contents of an array and multiply it by a number
+#include <stdio.h>
+int main(void){
+    int i;
+    int multiplier;
+    int numbers[5] = { 1, 2, 3, 4, 5};
+
+    // Print out the original array
+    printf("Original Array: [");
+    for(i = 0; i < 5; i++){
+
+        printf("%d", numbers[i]);
+        if(i < 5 - 1) printf(", ");     // Make it print out a space
+                                        // after every number except the last
+    }
+    printf("]\n");                      // Last number has a newline instead
+
+    // Figure out what the user wants to multiply by
+    printf("What do you want to multiply the array by?\n");
+    scanf("%d", &multiplier);
+
+    // Using this array to store our multiplied values
+    int multiplied_numbers[5];
+
+    // Multiplying the components
+    for(i = 0; i < 5; i++){
+        multiplied_numbers[i] = numbers[i] * multiplier;
+    }
+
+    printf("Multiplied Array: [");
+    for(i = 0; i < 5; i++){
+
+        printf("%d", multiplied_numbers[i]);
+        if(i < 5 - 1) printf(", ");     // Make it print out a space
+                                        // after every number except the last
+    }
+    printf("]\n");                      // Last number has a newline instead
+
+   return 0;
+}
+```
