@@ -73,4 +73,6 @@ input.txt
 ```
 There are other methods of avoiding it but, I just thought we just want to be careful about that.
 
-Notice how we use `fscanf()` to do our scanning with `FILE`s. The function works almost exactly the same way as `scanf()`, however, we have one additional piece into our function and that is whatever `FILE*` we are using. So in our code `fscanf(ifp, "%d", &buffer)`, we needed to be sure to have `ifp` in front and the rest looks like the normal `scanf()` function.
+Notice how we use `fscanf()` to do our scanning with `FILE*`. The function works almost exactly the same way as `scanf()`, however, we have one additional piece into our function and that is whatever `FILE*` we are using. So in our code `fscanf(ifp, "%d", &buffer)`, we needed to be sure to have `ifp` in front and the rest looks like the normal `scanf()` function.
+
+Now that we have done `"r"` (or **r**eading), let's talk about `"w"` (or **w**riting).
