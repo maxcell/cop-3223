@@ -2,7 +2,7 @@
 ### Table of Contents
 - [How did we do things before Arrays?](#how-did-we-do-things-before-arrays)
     - [Example 1](#example-1)
-- [Power of Arrays](#powers-of-arrays)
+- [Power of Arrays](#power-of-arrays)
     - [Example 2](#example-2)
 - [Breaking Down Arrays](#breaking-down-arrays)
     - [Example 3](#example-3)
