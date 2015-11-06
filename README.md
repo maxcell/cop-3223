@@ -7,8 +7,8 @@ So you are probably wondering, "Huh, what would really help me understand this c
 4. [Pointers](https://github.com/maxcell/cop-3223/tree/master/pointers)
 
 ## Extra Practice
-1. Tracing
-2. Writing Code
-3. Finding the Error
+1. [Tracing](#)
+2. [Writing Code](https://github.com/maxcell/cop-3223/tree/master/extra-practice/writing-code)
+3. [Finding the Error](https://github.com/maxcell/cop-3223/tree/master/extra-practice/find-error)
 
 Let's visit some of these topics in each directory.
