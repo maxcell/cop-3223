@@ -16,7 +16,7 @@ float mean(int array[], int length){
 }
 ```
 ### Example 2
-Write a function that takes in an integer array and its length and returns the range of the array. So for example, from the array `[-2, 2, 6, 7, 9, 10]`, we would return `12`. You can also use this as your base:
+Write a function that takes in an integer array and its length and returns the range of the array. So for example, from the array `[7, -2, 10, 2, 6, 9]`, we would return `12`. You can also use this as your base:
 ```c
 int range(int array[], int length){
 
