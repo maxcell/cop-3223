@@ -19,7 +19,7 @@ float mean(int array[], int length){
 
 int main(){
   // initialize the array with 5's
-  int my_array[ARRAY_SIZE] = {5};
+  int my_array[ARRAY_SIZE] = {5, 5, 5, 5, 5};
   float my_array_average;
 
   // pass the array and array size. Note no & needed on the
