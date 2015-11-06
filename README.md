@@ -6,4 +6,9 @@ So you are probably wondering, "Huh, what would really help me understand this c
 3. [Files](https://github.com/maxcell/cop-3223/tree/master/files)
 4. [Pointers](https://github.com/maxcell/cop-3223/tree/master/pointers)
 
+## Extra Practice
+1. Tracing
+2. Writing Code
+3. Finding the Error
+
 Let's visit some of these topics in each directory.
