@@ -162,6 +162,7 @@ int main(void){
 }
 ```
 
+** DO NOT FORGET TO STUDY ABOUT 2D ARRAYS **
 
 ### Common Pitfalls
 So now that we have talked about Arrays, let's talk about the common pitfalls and things you should be sure to recognize:
