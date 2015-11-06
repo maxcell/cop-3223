@@ -7,6 +7,8 @@
 - [Breaking Down Arrays](#breaking-down-arrays)
     - [Example 3](#example-3)
 -  [Cool Stuff with Arrays](#cool-stuff-with-arrays)
+    - [Example 4](#example-4)
+    - [Example 5](#example-5)
 - [Common Pitfalls](#common-pitfalls)
 
 ### How did we do things before Arrays?
@@ -130,3 +132,35 @@ int main(void){
    return 0;
 }
 ```
+
+#### Example 5
+```c
+// Objective: sum the numbers within an array
+#include <stdio.h>
+
+int main(void){
+    int i, sum = 0;
+    int numbers[10] = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+
+    // Print out the original array
+    printf("Original Array: [");
+    for(i = 0; i < 10; i++){
+
+        printf("%d", numbers[i]);
+        if(i < 10 - 1) printf(", ");     // Make it print out a space
+                                        // after every number except the last
+    }
+    printf("]\n");                      // Last number has a newline instead
+
+    for( i = 0; i < 10; i++ ){
+        sum += numbers[i];
+    }
+
+    printf("The sum of the given array: %d\n", sum);
+
+    return 0;
+}
+```
+
+
+### Common Pitfalls
