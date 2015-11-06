@@ -164,3 +164,8 @@ int main(void){
 
 
 ### Common Pitfalls
+So now that we have talked about Arrays, let's talk about the common pitfalls and things you should be sure to recognize:
+
+1. **Make sure that it is actually an array**: If it isn't declared as an array, it cannot be accessed like an array.`int a` is not `int a[5]`
+2. **Make sure that it doesn't get accessed outside of its size**: An array like, `int a[5]` can only go through `a[0] - a[4]`. If you try to do anything from `a[5]` on will have garbage data and also can cause your program to crash or throw an error if you are not careful.
+3. There is one more problem but we will talk about that with [pointers](https://github.com/maxcell/cop-3223/tree/master/pointers)...
