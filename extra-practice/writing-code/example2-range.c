@@ -29,11 +29,30 @@ int range(int array[], int length){
 }
 
 int sorted_range(int array[], int length){
+  /*since this is a sorted array, we can assume that:
+
+  we are going to have the max number as the first element
+  and the min number as the last element
+  OR
+  we are going to have the min number as the first element
+  and the max number as the last element.
+
+  Therefore we must find which index has the minimum, and which
+  has the maximum. We can then use max-min to determine the
+  range as normal.
+  */
+
+  // the array has the maximum number as the first element
+  // catches for arrays with: [max, ..., min]
   if (array[0] > array[length - 1]){
+    // subtract the last element from the first element. (max-min)
     return array[0] - array[length - 1];
   }
 
+  // the array has the minimum number as the first element
+  // catches for arrays with: [min, ..., max]
   if (array[0] < array[length - 1]){
+    // subtract the first element from the last element. (max-min)
     return array[length - 1] - array[0];
   }
 }
