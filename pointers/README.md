@@ -20,14 +20,14 @@ Pointers are incredibly powerful in the realm of C. The power comes from the abi
 
 int main(void)
 {
-    int *house1 NULL;
-    int *house2 NULL;
+    int *house1;
+    int *house2;
 
     int house3 = 1500;
     int house4 = 1505;
 
-    *house1 = house3;
-    *house2 = house4;
+    house1 = &house3;
+    house2 = &house4;
 
 
     printf(" %d \n ", *house1);
